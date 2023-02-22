@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: monospace;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+form label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+form label input[type="number"] {
+  margin-right: 10px;
+  width: 50px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #3d3d3d;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #4d4d4d;
+}
+
+#password {
+  margin-top: 20px;
+  background-color: #3d3d3d;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  transition: all 1s;
+}
+
+#password.animated {
+  animation: highlight 1s;
+}
+
+@keyframes highlight {
+  0% {
+    background-color: #3d3d3d;
+    color: #fff;
+  }
+
+  50% {
+    background-color: #fff;
+    color: #222;
+  }
+
+  100% {
+    background-color: #3d3d3d;
+    color: #fff;
+  }
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#matrix {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.stream {
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 5px;
+}
+
+.stream span {
+  display: block;
+  color: #0f0;
+  opacity: 0.1;
+  transform: translateY(-100%);
+  animation: fall 0.2s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.1;
+    transform: translateY(100%);
+  }
+
+{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #000;
+}
+canvas {
+  display: block;
+}
